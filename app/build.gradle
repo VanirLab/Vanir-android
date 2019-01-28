@@ -46,16 +46,15 @@ android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
     defaultConfig {
-        //  testHandleProfiling true
-        //  testFunctionalTest true
+    
         applicationId "app.vanir"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode code
-        versionName "1.0.5"
+        versionName "1.0.0"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
-        //ndk.abiFilters = 'armeabi-v7a' 'arm64-v8a' 'x86' 'x86_64'
+     
         // Fix a build error related to having log4j in the classpath.
         javaCompileOptions {
             annotationProcessorOptions {
@@ -90,7 +89,7 @@ android {
             buildConfigField "java.util.Date", "BUILD_TIME", "new java.util.Date(" + Calendar.getInstance().getTimeInMillis() + "L)"
             buildConfigField "String", "BUILD_NAME", "\"" + System.getenv("USER") + "\""
             useProguard false
-           // pseudoLocalesEnabled true
+     
             minifyEnabled false
             shrinkResources false
             debuggable true
@@ -132,12 +131,7 @@ android {
     }
 }
 repositories {
-    maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots"
-    }
-    maven {
-        url "https://s3.amazonaws.com/repo.commonsware.com"
-    }
+
     maven {
         url 'test-repo'
     }
@@ -191,9 +185,9 @@ dependencies {
 
     // instead of design UIX
     implementation 'androidx.appcompat:appcompat:1.0.2'
-    //implementation 'com.android.support:support-compat:28.0.0'
+ 
     implementation 'androidx.core:core:1.0.1'
-    //implementation 'com.android.support:support-annotations:28.0.0'
+ 
     implementation 'androidx.annotation:annotation:1.0.1'
 
     // instead of support-v7
@@ -210,33 +204,12 @@ dependencies {
     implementation 'androidx.legacy:legacy-preference-v14:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    // Facebook Core only (Analytics)
-    implementation 'com.facebook.android:facebook-core:4.33.0'
-    // Facebook Login only
-    implementation 'com.facebook.android:facebook-login:4.33.0'
-    // Facebook Share only
-    implementation 'com.facebook.android:facebook-share:4.33.0'
-    // Facebook Places only
-    implementation 'com.facebook.android:facebook-places:4.33.0'
-    // Facebook Messenger only
-    implementation 'com.facebook.android:facebook-messenger:4.33.0'
-    // Facebook App Links only
-    implementation 'com.facebook.android:facebook-applinks:4.33.0'
-    // Facebook Android SDK (everything)
-    implementation 'com.facebook.android:facebook-android-sdk:4.33.0'
+
 
     //Google and IOT
     implementation 'com.google.android.gms:play-services-nearby:16.0.0'
     // For Firebase , etc.
-    implementation 'com.google.firebase:firebase-appindexing:17.1.0'
-    implementation 'com.google.firebase:firebase-core:16.0.6'
-    implementation 'com.google.firebase:firebase-perf:16.2.3'
-    implementation 'com.google.firebase:firebase-ads:17.1.2'
-    implementation 'com.google.firebase:firebase-analytics:16.0.6'
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
-    // Update your firebase-core version, if it's lower than v11.4.2
-    //Tensorflow AI
-    implementation 'org.tensorflow:tensorflow:1.12.0'
+
     // For Sockslib
     implementation 'com.squareup.okhttp3:okhttp:3.12.1'
     implementation 'com.commonsware.cwac:netsecurity:0.4.5'
@@ -246,11 +219,11 @@ dependencies {
     compileOnly 'javax.annotation:javax.annotation-api:1.3.2'
     compileOnly 'com.google.code.findbugs:jsr305:3.0.2'
     //Import Samsung dependencies to your project
-    //implementation files('libs/sdk-v1.0.0.jar')
+
     implementation files('libs/pass-v1.2.6.jar')
 
-    //implementation project(':app')
-    // implementation 'app.intra:vanir:1.0.3'
+    implementation project(':app')
+    implementation 'app.intra:vanir:1.0.0'
 }
 // For Firebase Analytics
 apply plugin: 'com.google.gms.google-services'
