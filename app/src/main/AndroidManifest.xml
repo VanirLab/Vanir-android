@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.vanir">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" tools:node="replace"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:name=".ui.VanirApplication"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher_foreground_vanirlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+
+       <activity android:name=".ui.MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="WindowManagerPreference:SuppressWindowControlNavigationButton" android:value="true" />
+        </activity>
+
+        <!-- [START manifest_service] -->
+        <service
+            android:name=".service.MyTaskService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <!-- [END manifest_service] -->
+        <service
+            android:name=".sys.IntraVpnService"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_VPN_SERVICE" >
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+                <action android:name="com.android.vpndialogs.ConfirmDialog"/>
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".sys.AutoStarter" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".plugins.Downloader"/>
+
+        <provider
+            android:name=".plugins.LegacyCompatFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+        <service
+            android:name=".service.UpdateService"
+            android:enabled="true" />
+
+
+
+        <activity
+            android:name=".ui.dialog.MessageMainActivity"
+            android:label="@string/main_text_activity_messaging_main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity"/>
+        </activity>
+
+
+        <!-- This meta-data tag is required to use Facebook SDK -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/FACEBOOK_ID"/>
+
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" /> <!-- @bool/FIREBASE_ENABLED -->
+
+    </application>
+
+</manifest>
