@@ -218,12 +218,9 @@ dependencies {
     implementation 'org.slf4j:slf4j-android:1.7.25'
     compileOnly 'javax.annotation:javax.annotation-api:1.3.2'
     compileOnly 'com.google.code.findbugs:jsr305:3.0.2'
-    //Import Samsung dependencies to your project
+    
 
-    implementation files('libs/pass-v1.2.6.jar')
 
-    implementation project(':app')
-    implementation 'app.intra:vanir:1.0.0'
 }
 // For Firebase Analytics
 apply plugin: 'com.google.gms.google-services'
