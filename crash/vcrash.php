@@ -12,7 +12,9 @@
  fwrite($HandleLog, "APP_VERSION_CODE=" . $_POST['APP_VERSION_CODE'] . "\r\n");
  fwrite($HandleLog, "APP_VERSION_NAME=" . $_POST['APP_VERSION_NAME'] . "\r\n");
  fwrite($HandleLog, "PACKAGE_NAME=" . $_POST['PACKAGE_NAME'] . "\r\n");
+ fwrite($HandleLog, "INSTALLATION_ID=" . $_POST['INSTALLATION_ID'] . "\r\n");
  fwrite($HandleLog, "PHONE_MODEL=" . $_POST['PHONE_MODEL'] . "\r\n");
+ fwrite($HandleLog,  "DUMPSYS_MEMINFO=" . $_POST['DUMPSYS_MEMINFO'] . "\r\n");
  fwrite($HandleLog, "ANDROID_VERSION=" . $_POST['ANDROID_VERSION'] . "\r\n");
  fwrite($HandleLog, "STACK_TRACE=" . $_POST['STACK_TRACE'] . "\r\n");
  fwrite($HandleLog, "TOTAL_MEM_SIZE=" . $_POST['TOTAL_MEM_SIZE'] . "\r\n");
