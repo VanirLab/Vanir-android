@@ -1,0 +1,12 @@
+{
+  "latestVersion": "1.0.77",
+  "latestVersionCode": 3500,
+  "url": "https://github.com/VanirLab/Vanir-android/releases",
+  "releaseNotes": [
+    "- Updated look and UI",
+    "- New navigation layout",
+    "- Vanirx bridge technology",
+    "- Loggdata for transparency",
+    "- Shake it and report it! plugin"
+  ]
+}
