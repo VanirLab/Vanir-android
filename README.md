@@ -1,10 +1,11 @@
+<p align="center">
+  <img alt="VanirLab" src="https://github.com/VanirLab/vanir-android/blob/master/ic_launcher_vanirlogo_round.png" height="142" />
+</p>
 
 # Vanir
 Hardwired VPN and DNS encryption application for maximized security.
 
-<p align="center">
-  <img alt="VanirLab" src="https://github.com/VanirLab/vanir-android/blob/master/ic_launcher_vanirlogo_round.png" height="142" />
-</a>
+
 
 ## MIT License
 Copyright (c) 2019 Vanir lab
