@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="VanirLab" src="https://github.com/VanirLab/vanir-android/blob/master/ic_launcher_vanirlogo_round.png" height="90" />
+  <img alt="VanirLab" src="https://github.com/VanirLab/vanir-android/blob/master/logo_backdrop.png" height="90" />
 </p>
 
 # Vanir
