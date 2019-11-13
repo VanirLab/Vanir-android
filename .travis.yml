@@ -11,13 +11,12 @@ sudo: false
 android:
   components:
     - tools
-    - build-tools-25.0.2
-    - android-25
+    - build-tools-28.0.3
+    - android-28
     - extra-android-m2repository
     - extra-android-support
 
 before_install:
  - chmod +x gradlew
 
-script:
-  - ./gradlew assembleRelease
+
