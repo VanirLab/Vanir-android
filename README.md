@@ -5,6 +5,8 @@
 # Vanir
 Hardwired VPN and DNS encryption application for maximized security.
 
+## Status
+[![Build Status](https://travis-ci.org/VanirLab/Vanir-android.svg?branch=master)](https://travis-ci.org/VanirLab/Vanir-android)
 
 
 ## MIT License
