@@ -1,7 +1,7 @@
 <p align="center">
   <img alt="VanirLab" src="https://github.com/VanirLab/vanir-android/blob/master/logo_backdrop.png" height="90" />
 </p>
-
+<p style="background-color:red;">TEST</p>
 # Vanir
 Hardwired VPN and DNS encryption application for maximized security.
 
