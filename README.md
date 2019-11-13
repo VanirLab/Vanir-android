@@ -2,11 +2,12 @@
   <img alt="VanirLab" src="https://github.com/VanirLab/vanir-android/blob/master/logo_backdrop.png" height="90" />
 </p>
 
+<div class="text-purple">This text is purple, <a href="#" class="text-inherit">including the link</a></div>
+
 # Vanir
 Hardwired VPN and DNS encryption application for maximized security.
 
-### <i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:.85em" aria-hidden="true"></i> Orange GitLab Tanuki
-{: #tanuki-orange}
+
 
 > <br/>*Developed by VanirLab 2018-04-11 - present* <br/>
 > <br/>Logo/icon created by Cybertrigo Design Lab (2018)<br/>
