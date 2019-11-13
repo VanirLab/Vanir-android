@@ -5,12 +5,8 @@
 # Vanir
 Hardwired VPN and DNS encryption application for maximized security.
 
-{::options parse_block_html="true" /}
-
-<i class="fab fa-gitlab" style="color:rgb(107,79,187); font-size:.85em" aria-hidden="true"></i>&nbsp;&nbsp;
-The webcast I want to announce - [Register here][webcast-link]!
-&nbsp;&nbsp;<i class="fab fa-gitlab" style="color:rgb(107,79,187); font-size:.85em" aria-hidden="true"></i>
-{: .alert .alert-webcast}
+### <i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:.85em" aria-hidden="true"></i> Orange GitLab Tanuki
+{: #tanuki-orange}
 
 > <br/>*Developed by VanirLab 2018-04-11 - present* <br/>
 > <br/>Logo/icon created by Cybertrigo Design Lab (2018)<br/>
