@@ -1,4 +1,2 @@
 language: java
-  - run:
-      name: chmod permissions
-      command: git update-index --chmod=+x gradlew
+before_script: git update-index --chmod=+x gradlew
