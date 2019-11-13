@@ -5,11 +5,13 @@
 # Vanir
 Hardwired VPN and DNS encryption application for maximized security.
 
-<span style="color:blue">Version:1.0.80</span>
+
 
 > <br/>*Developed by VanirLab 2018-04-11 - present* <br/>
 > <br/>Logo/icon created by Cybertrigo Design Lab (2018)<br/>
 > <br/>Supports Android SDK levels 16-28+<br/><br/>
+> <br/><span style="color:blue">Version:1.0.80</span><br/>
+
 
 ## Status
 [![Build Status](https://travis-ci.org/VanirLab/Vanir-android.svg?branch=master)](https://travis-ci.org/VanirLab/Vanir-android)
