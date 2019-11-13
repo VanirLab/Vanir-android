@@ -1,3 +1,4 @@
 language: java
-before_script: git update-index --chmod=+x gradlew
-before_script: Permission accepted
+before_script: 
+- git update-index --chmod=+x gradlew
+
