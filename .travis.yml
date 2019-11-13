@@ -21,3 +21,4 @@ before_install:
 
 script:
   - ./gradlew assembleRelease --stacktrace
+  - ./gradlew build connectedCheck
