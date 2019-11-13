@@ -1,9 +1,11 @@
 <p align="center">
   <img alt="VanirLab" src="https://github.com/VanirLab/vanir-android/blob/master/logo_backdrop.png" height="90" />
 </p>
-<p style="background-color:red;">TEST</p>
+
 # Vanir
 Hardwired VPN and DNS encryption application for maximized security.
+
+<span style="color:blue">Version:1.0.80</span>
 
 > <br/>*Developed by VanirLab 2018-04-11 - present* <br/>
 > <br/>Logo/icon created by Cybertrigo Design Lab (2018)<br/>
