@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>app.vanir</groupId>
+  <artifactId>vanir</artifactId>
+  <versioning>
+    <release>1.0.81v</release>
+    <versions>
+      <version>1.0.80v</version>
+      <version>1.0.79v</version>
+      <version>1.0.78v</version>
+
+    </versions>
+    <lastUpdated>20191114</lastUpdated>
+  </versioning>
+</metadata>
