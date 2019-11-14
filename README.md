@@ -16,7 +16,7 @@ Hardwired VPN and DNS encryption application for maximized security.
 
 ## Status
 [![Build Status](https://travis-ci.org/VanirLab/Vanir-android.svg?branch=master)](https://travis-ci.org/VanirLab/Vanir-android)
-
+[![Coverage Status](https://coveralls.io/repos/github/VanirLab/Vanir-android/badge.svg?branch=master)](https://coveralls.io/github/VanirLab/Vanir-android?branch=master)
 
 
 
