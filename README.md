@@ -16,9 +16,8 @@ Hardwired VPN and DNS encryption application for maximized security.
 
 ## Status
 [![Build Status](https://travis-ci.org/VanirLab/Vanir-android.svg?branch=master)](https://travis-ci.org/VanirLab/Vanir-android)
-[![Trust Badge](https://trustlock.co/wp-content/uploads/2019/01/guaranteed-safe-checkout-5.pn)](https://trustlock.co)
+[![Trust Badge](https://trustlock.co/wp-content/uploads/2019/01/guaranteed-safe-checkout-5.png)](https://trustlock.co)
 
-<a name="trustbadge" href="https://trustlock.co" ><img name="trustseal" alt="Trust Badges" style="border: 0;" src="https://trustlock.co/wp-content/uploads/2019/01/guaranteed-safe-checkout-5.png" width="238" height="44"></a>
 
 
 ## MIT License
