@@ -1,0 +1,7 @@
+<distributionManagement>
+   <repository>
+     <id>vanir</id>
+     <name>GitHub Vanir Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/VanirLab/Vanir-android</url>
+   </repository>
+</distributionManagement>
