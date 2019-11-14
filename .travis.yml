@@ -6,7 +6,7 @@ jdk:
 notifications:
   email: false
 
-sudo: false
+sudo: required
 
 android:
   components:
