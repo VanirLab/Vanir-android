@@ -1,0 +1,14 @@
+version: v1.0
+name: Vanir-android
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Vanir
+    task:
+      jobs:
+        - name: Run java
+          commands:
+            - java --version
+            - mvn -v
