@@ -8,7 +8,7 @@ import java.net.InetAddress;
 /**
  * Vanir Package information
  */
-public class PackageV {
+public class PackageParams {
   public  final String COMMON;
   public  final String GCM;
   public  final String LOCATION;
